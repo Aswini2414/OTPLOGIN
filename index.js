@@ -6,7 +6,7 @@ const dotenv = require("dotenv");
 const connection = require("./database/db.js");
 const router = require('./Routes/route.js');
 
-const PORT = 8000;
+const PORT = process.env.PORT|| 8000;
 
 //Middlewares
 app.use(express.json());
